@@ -15,16 +15,16 @@ A simple Node.js application that converts temperatures between Celsius and Fahr
 
 ```
 temperature-converter/
-├── temperatureConverter.js       # Core conversion logic
-├── temperatureConverter.test.js  # Unit tests for core logic
-├── cli.js                        # Command-line interface
-├── webApp.js                     # Web server
-├── public/                       # Static web files
-│   └── index.html                # Web interface
-├── webApp.test.js                # Tests for web application
-├── package.json                  # Project configuration
-├── .gitignore                    # Git ignore file
-└── README.md                     # Project documentation
+├── temperatureConverter.js           # Core conversion logic
+├── webApp.js                         # Web server
+├── public/                           # Static web files
+│   └── index.html                    # Web interface
+├── tests/
+│   └── temperatureConverter.test.js  # Unit tests for core logic
+│   └── webApp.test.js                # Tests for web application
+├── package.json                      # Project configuration
+├── .gitignore                        # Git ignore file
+└── README.md                         # Project documentation
 ```
 
 ## Installation
@@ -37,16 +37,6 @@ npm install
 ```
 
 ## Usage
-
-### Command-line Interface
-
-Run the CLI:
-
-```bash
-npm start
-# or
-node cli.js
-```
 
 ### Web Interface
 
