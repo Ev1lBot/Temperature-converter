@@ -4,7 +4,6 @@ on:
   pull_request:
     types: [opened, edited, reopened, synchronize, review_requested]
     branches:
-    - main
     - develop
  
 jobs:
@@ -47,7 +46,7 @@ jobs:
             if (!approved) {
               core.setFailed("Код-рев’ю не схвалено");
             }
-              
+
       - name: Count lines of code with Cloc
         run: |
           sudo apt-get install -y cloc
