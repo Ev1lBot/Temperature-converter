@@ -55,12 +55,9 @@ jobs:
           cat cloc-report.txt
 
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarcloud-github-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.branch.name=develop
       
       - name: Запуск flake8 через Reviewdog
         uses: reviewdog/action-flake8@v2
