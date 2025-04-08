@@ -6,7 +6,6 @@ A simple Node.js application that converts temperatures between Celsius and Fahr
 
 - Convert Celsius to Fahrenheit
 - Convert Fahrenheit to Celsius
-- Command-line interface
 - Web interface
 - Input validation
 - Comprehensive unit tests
