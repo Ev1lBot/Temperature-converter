@@ -1,4 +1,4 @@
-const TemperatureConverter = require('./temperatureConverter');
+const TemperatureConverter = require('../src/temperatureConverter');
 
 describe('TemperatureConverter', () => {
   describe('celsiusToFahrenheit', () => {

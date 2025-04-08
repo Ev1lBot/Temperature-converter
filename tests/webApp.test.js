@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./webApp');
+const app = require('../src/webApp');
 
 describe('Web Application', () => {
   test('GET / should return the HTML page', async () => {
