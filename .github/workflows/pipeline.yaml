@@ -37,7 +37,7 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const {data: reviews} = await github.pulls.listReviews({ 
+            const {data: reviews} = await github.rest.pulls.listReviews({ 
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: prNumber
@@ -46,6 +46,7 @@ jobs:
             if (!approved) {
               core.setFailed("Код-рев’ю не схвалено");
             }
+
       - name: Count lines of code with Cloc
         run: |
           sudo apt-get install -y cloc
