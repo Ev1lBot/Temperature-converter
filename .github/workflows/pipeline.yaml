@@ -58,6 +58,9 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.branch.name=develop
       
       - name: Запуск flake8 через Reviewdog
         uses: reviewdog/action-flake8@v2
