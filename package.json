@@ -1,0 +1,23 @@
+{
+    "name": "temperature-converter",
+    "version": "1.0.0",
+    "description": "A simple temperature converter application",
+    "main": "temperatureConverter.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [
+        "temperature",
+        "converter",
+        "celsius",
+        "fahrenheit"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "dependencies": {
+        "express": "^5.1.0"
+    }
+}
