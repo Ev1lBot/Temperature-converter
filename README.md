@@ -10,6 +10,7 @@ A simple Node.js application that converts temperatures between Celsius and Fahr
 - Input validation
 - Comprehensive unit tests
 
+
 ## Project Structure
 
 ```
